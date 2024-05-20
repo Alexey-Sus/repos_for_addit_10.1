@@ -1,4 +1,4 @@
-from widget.py import list_sort_prod_price, quant_avg_pr_month
+from src.widget import list_sort_prod_price, quant_avg_pr_month
 
 # defining variables for both functions
 
@@ -20,3 +20,13 @@ list_for_list_sort_prod_price: list = [
 {'name': 'paper', 'price': 1010, 'category': 'paper', 'quantity': 44},
 {'name': 'pen', 'price':15, 'category': 'stationery', 'quantity': 1473}
 ]
+
+# checking how the functions work
+for i in list_sort_prod_price(list_for_list_sort_prod_price):
+    print(i)
+
+print()
+
+for i in quant_avg_pr_month(list_for_avg_price):
+    value = quant_avg_pr_month(list_for_avg_price)[i]
+    print(f'{i}: {value}')
