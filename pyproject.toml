@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "special-for-addit-10-1"
+version = "0.1.0"
+description = ""
+authors = ["Al_Pl <asuspitsyn@mail.ru>"]
+readme = "README.md"
+packages = [{include = "special_for_addit_10"}]
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.0.0"
+black = "^24.4.2"
+mypy = "^1.10.0"
+isort = "^5.13.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
